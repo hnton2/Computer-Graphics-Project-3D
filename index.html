@@ -13,8 +13,8 @@
             <a href="javascript:void(0)" class="dropbtn">Geometry</a>
             <div class="dropdown-content">
                 <a href="#" id="Cone">Cone</a>
-                <a href="#" id="cube">cube</a>
-                <a href="#" id="cylinder">cylinder</a>
+                <a href="#" id="cube">Cube</a>
+                <a href="#" id="cylinder">Cylinder</a>
                 <a href="#" id="Sphere">Sphere</a>
                 <a href="#" id="Torus">Torus</a>
                 <a href="#" id="Teapot">Teapot</a>
@@ -31,8 +31,8 @@
             <a href="javascript:void(0)" class="dropbtn">Geometry Point</a>
             <div class="dropdown-content">
                 <a href="#" id="Cone_Point">Cone_Point</a>
-                <a href="#" id="cube__Point">cube__Point</a>
-                <a href="#" id="cylinder_Point">cylinder_Point</a>
+                <a href="#" id="cube__Point">Cube_Point</a>
+                <a href="#" id="cylinder_Point">Cylinder_Point</a>
                 <a href="#" id="Sphere_Point">Sphere_Point</a>
                 <a href="#" id="Torus_Point">Torus_Point</a>
                 <a href="#" id="Teapot_Point">Teapot_Point</a>
@@ -50,8 +50,8 @@
             <a href="javascript:void(0)" class="dropbtn">Geometry Line</a>
             <div class="dropdown-content">
                 <a href="#" id="Cone_Line">Cone_Line</a>
-                <a href="#" id="cube__Line">cube__Line</a>
-                <a href="#" id="cylinder_Line">cylinder_Line</a>
+                <a href="#" id="cube__Line">Cube_Line</a>
+                <a href="#" id="cylinder_Line">Cylinder_Line</a>
                 <a href="#" id="Sphere_Line">Sphere_Line</a>
                 <a href="#" id="Torus_Line">Torus_Line</a>
                 <a href="#" id="Teapot_Line">Teapot_Line</a>
@@ -62,6 +62,17 @@
                 <a href="#" id="TorusKnot_Line">Torus_Line</a>
                 <a href="#" id="Icosahedron_Line">Icosahedron_Line</a>
                 <a href="#" id="Octahedron_Line">Octahedron_Line</a>
+            </div>  
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Models</a>
+            <div class="dropdown-content">
+                <a href="#" id="cesium_can">Cesium Man</a>
+                <a href="#" id="cesium_milk_truck">Cesium Milk Truck</a>
+                <a href="#" id="damage_helmet">Damage Helmet</a>
+                <a href="#" id="duck">Duck</a>
+                <a href="#" id="monster">Monster</a>
+                <a href="#" id="city">City</a>
             </div>  
         </li>
         <li class="dropdown">
@@ -76,10 +87,9 @@
         </li>
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Texture</a>
-            <div class="dropdown-content">
-                <a href="#" id="texture">Texture</a>
-                <input type="file" id="filename">
-                <h4></h4>
+            <div class="dropdown-content" style="padding: 2px;">
+                <input type="file" id="filename" style="margin: 5px;">
+                <a href="#" class="button" id="texture" style="display: inline;">Apply</a>
             </div>
         </li> 
         <li class="dropdown">
@@ -107,6 +117,8 @@
                 <a href="#" id="Line">Line</a>
                 <a href="#" id="Mesh">Mesh</a>
                 <a href="#" id="Point">Point</a>
+                <a href="#" id="Light">Light</a>
+                <a href="#" id="Plane">Plane</a>
             </div>  
         </li>
         <li class="dropdown">
@@ -130,12 +142,12 @@
     <script type="module" src="./lib/IcosahedronGeometry.js"></script>
     <script type="module" src="./lib/TetrahedronGeometry.js"></script>
     <script type="module" src="./lib/OctahedronGeometry.js"></script>
+	<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
 
     <script src="js/utils.js"></script>
     <script src="js/geometry.js"></script>
     <script src="js/plane.js"></script>
     <script src="js/light.js"></script>
-    <script src="js/animation.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

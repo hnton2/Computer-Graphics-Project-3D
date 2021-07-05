@@ -1,4 +1,3 @@
-
 function getSphere(size){
     var geometry = new THREE.SphereGeometry(size,24,24);
     var material =  new THREE.MeshStandardMaterial({
@@ -101,7 +100,7 @@ function getCone_Line(w,h,d){
 }
 function getCone_Texture(w,h,d,filename){
 
-    const texture = new THREE.TextureLoader().load('../textures/'+ filename, render );
+    const texture = new THREE.TextureLoader().load('./../textures/'+ filename, render );
     texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
 
     var geometry = new THREE.ConeGeometry(w,h,d);
@@ -917,5 +916,16 @@ function getTetrahedron_Line(){
     mesh.castShadow = true;
     mesh.position.y = 25;
     // mesh.position.z = 25;
+    return mesh;
+}
+function getSphere_pointlight(size){
+    var geometry = new THREE.SphereGeometry(size,24,24);
+    var material =  new THREE.MeshBasicMaterial({
+        color: 'rgb(255,255,255)'
+    });
+    var mesh = new THREE.Mesh(
+        geometry,
+        material
+    );
     return mesh;
 }
