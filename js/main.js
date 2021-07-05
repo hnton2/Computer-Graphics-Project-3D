@@ -724,10 +724,10 @@ function init(){
     document.getElementById( 'city' ).addEventListener( 'click', function () {
         ClearGeometry();
         removeObject3D();
-        currentMesh = '3DModels';
+        currentMesh = 'City';
         loader.load('https://threejsfundamentals.org/threejs/resources/models/cartoon_lowpoly_small_city_free_pack/scene.gltf',(gltf) => {
             model3D = gltf.scene;
-            model3D.name = 'Monster';
+            model3D.name = 'City';
             scene.add(model3D);
             control.attach( model3D );
             scene.add( control );
