@@ -1,3 +1,4 @@
+
 function getSphere(size){
     var geometry = new THREE.SphereGeometry(size,24,24);
     var material =  new THREE.MeshStandardMaterial({
@@ -47,7 +48,6 @@ function getSphere_Texture(size,filename){
     const mesh = new THREE.Mesh( geometry, material );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getCone(w,h,d){
@@ -94,13 +94,11 @@ function getCone_Line(w,h,d){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
     return mesh;
 }
 function getCone_Texture(w,h,d,filename){
 
-    const texture = new THREE.TextureLoader().load('./../textures/'+ filename, render );
+    const texture = new THREE.TextureLoader().load('../textures/'+ filename, render );
     texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
 
     var geometry = new THREE.ConeGeometry(w,h,d);
@@ -108,7 +106,6 @@ function getCone_Texture(w,h,d,filename){
     const mesh = new THREE.Mesh( geometry, material );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 
@@ -124,7 +121,6 @@ function getBox(w,h,d){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getBox_Texture(w,h,d,filename){
@@ -137,7 +133,6 @@ function getBox_Texture(w,h,d,filename){
     const mesh = new THREE.Mesh( geometry, material );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getBox_Point(w,h,d,k,l,o){
@@ -152,7 +147,6 @@ function getBox_Point(w,h,d,k,l,o){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getBox_Line(w,h,d,l){
@@ -167,7 +161,6 @@ function getBox_Line(w,h,d,l){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getTorus(w,h,d,l){
@@ -182,7 +175,6 @@ function getTorus(w,h,d,l){
     );
     mesh.castShadow = true;
     mesh.position.y = 35;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getTorus_Texture(w,h,d,l,filename){
@@ -195,7 +187,6 @@ function getTorus_Texture(w,h,d,l,filename){
     const mesh = new THREE.Mesh( geometry, material );
     mesh.castShadow = true;
     mesh.position.y = 35;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getTorus_Point(w,h,d,k){
@@ -210,7 +201,6 @@ function getTorus_Point(w,h,d,k){
     );
     mesh.castShadow = true;
     mesh.position.y = 35;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getTorus_Line(w,h,d,l){
@@ -225,7 +215,6 @@ function getTorus_Line(w,h,d,l){
     );
     mesh.castShadow = true;
     mesh.position.y = 35;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getCylinder(w,h,d,k,q){
@@ -240,9 +229,7 @@ function getCylinder(w,h,d,k,q){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
-    // mesh.rotation.y = 145;
+
     return mesh;
 }
 function getCylinder_Point(w,h,d,k,q){
@@ -257,9 +244,6 @@ function getCylinder_Point(w,h,d,k,q){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
-    // mesh.rotation.y = 145;
     return mesh;
 }
 function getCylinder_Line(w,h,d,k){
@@ -274,9 +258,6 @@ function getCylinder_Line(w,h,d,k){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
-    // mesh.rotation.y = 145;
     return mesh;
 }
 function getCylinder_Texture(w,h,d,k,q,filename){
@@ -289,7 +270,6 @@ function getCylinder_Texture(w,h,d,k,q,filename){
     const mesh = new THREE.Mesh( geometry, material );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 
@@ -305,9 +285,6 @@ function getTeapot(teapotSize){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
-    // mesh.rotation.y = 145;
     return mesh;
 }
 function getTeapot_Point(teapotSize){
@@ -322,9 +299,6 @@ function getTeapot_Point(teapotSize){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
-    // mesh.rotation.y = 145;
     return mesh;
 }
 function getTeapot_Line(teapotSize){
@@ -339,9 +313,6 @@ function getTeapot_Line(teapotSize){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
-    // mesh.rotation.y = 145;
     return mesh;
 }
 function getTeapot_Texture(teapotSize,filename){
@@ -354,7 +325,6 @@ function getTeapot_Texture(teapotSize,filename){
     const mesh = new THREE.Mesh( geometry, material );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getKlein(k){
@@ -369,9 +339,6 @@ function getKlein(k){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
-    // mesh.rotation.y = 145;
     return mesh;
 }
 function getKlein_Point(k){
@@ -386,9 +353,6 @@ function getKlein_Point(k){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
-    // mesh.rotation.y = 145;
     return mesh;
 }
 function getKlein_Line(k){
@@ -403,9 +367,6 @@ function getKlein_Line(k){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
-    // mesh.rotation.y = 145;
     return mesh;
 }
 function getKlein_Texture(k,filename){
@@ -418,7 +379,6 @@ function getKlein_Texture(k,filename){
     const mesh = new THREE.Mesh( geometry, material );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getLathe(segments, phiStart, phiLength){
@@ -446,9 +406,6 @@ function getLathe(segments, phiStart, phiLength){
     );
     mesh.castShadow = true;
     mesh.position.y = 20;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
-    // mesh.rotation.y = 145;
     return mesh;
 }
 function getLathe_Point(segments, phiStart, phiLength){
@@ -476,9 +433,6 @@ function getLathe_Point(segments, phiStart, phiLength){
     );
     mesh.castShadow = true;
     mesh.position.y = 20;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
-    // mesh.rotation.y = 145;
     return mesh;
 }
 function getLathe_Line(segments, phiStart, phiLength){
@@ -506,9 +460,6 @@ function getLathe_Line(segments, phiStart, phiLength){
     );
     mesh.castShadow = true;
     mesh.position.y = 20;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
-    // mesh.rotation.y = 145;
     return mesh;
 }
 function getLathe_Texture(segments, phiStart, phiLength,filename){
@@ -538,7 +489,6 @@ function getLathe_Texture(segments, phiStart, phiLength,filename){
     
     mesh.castShadow = true;
     mesh.position.y = 20;
-    // mesh.position.z = 25;
     return mesh;
 }
 
@@ -568,7 +518,6 @@ function getHeart(){
     mesh.position.y = 110;
     mesh.position.z = 25;
     mesh.rotation.x = Math.PI;
-    // mesh.rotation.y = 145;
     return mesh;
 }
 function getHeart_Point(){
@@ -671,7 +620,6 @@ function getTorusKnot(){
     );
     mesh.castShadow = true;
     mesh.position.y = 30;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getTorusKnot_Texture(filename){
@@ -691,7 +639,6 @@ function getTorusKnot_Texture(filename){
     const mesh = new THREE.Mesh( geometry, material );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getTorusKnot_Point(){
@@ -713,7 +660,6 @@ function getTorusKnot_Point(){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getTorusKnot_Line(){
@@ -750,9 +696,6 @@ function getIcosahedron(k){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
-    // mesh.rotation.y = 145;
     return mesh;
 }
 function getIcosahedron_Point(k){
@@ -767,9 +710,6 @@ function getIcosahedron_Point(k){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
-    // mesh.rotation.y = 145;
     return mesh;
 }
 function getIcosahedron_Line(k){
@@ -784,9 +724,6 @@ function getIcosahedron_Line(k){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
-    // mesh.rotation.x = Math.PI/2;
-    // mesh.rotation.y = 145;
     return mesh;
 }
 function getIcosahedron_Texture(k,filename){
@@ -799,7 +736,6 @@ function getIcosahedron_Texture(k,filename){
     const mesh = new THREE.Mesh( geometry, material );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getOctahedron(){
@@ -814,7 +750,6 @@ function getOctahedron(){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getOctahedron_Texture(filename){
@@ -827,7 +762,6 @@ function getOctahedron_Texture(filename){
     const mesh = new THREE.Mesh( geometry, material );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getOctahedron_Point(){
@@ -842,7 +776,6 @@ function getOctahedron_Point(){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getOctahedron_Line(){
@@ -857,7 +790,6 @@ function getOctahedron_Line(){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getTetrahedron(){
@@ -872,7 +804,6 @@ function getTetrahedron(){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getTetrahedron_Texture(filename){
@@ -885,7 +816,6 @@ function getTetrahedron_Texture(filename){
     const mesh = new THREE.Mesh( geometry, material );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getTetrahedron_Point(){
@@ -900,7 +830,6 @@ function getTetrahedron_Point(){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getTetrahedron_Line(){
@@ -915,7 +844,6 @@ function getTetrahedron_Line(){
     );
     mesh.castShadow = true;
     mesh.position.y = 25;
-    // mesh.position.z = 25;
     return mesh;
 }
 function getSphere_pointlight(size){

@@ -4,6 +4,7 @@ function getPlaneAnimate(material, size)
     material.side = THREE.DoubleSide;
     var obj = new THREE.Mesh(geometry, material);
     obj.receiveShadow = true;
+    
     return obj;
 }
 
@@ -20,6 +21,6 @@ function getPlane(size){
         material        
     );
         mesh.receiveShadow = true;
-
+        mesh.rotation.x = Math.PI/2;
     return mesh;
 }
